@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="<%= bot.user.username %>" />
+    <meta name="og:description" content="Website Ini Untuk Join Discord <%= bot.user.username %>" />
+    <meta name="og:image" content="<%= bot.user.displayAvatarURL({ dynamic: true }) %>" />
+    <meta name="og:url" content="<%= domain %>/" />
+
+    <meta name="twitter:title" content="<%= bot.user.username %>" />
+    <meta name="twitter:description" content="Website Ini Untuk Join Discord <%= bot.user.username %>" />
+    <meta name="twitter:image" content="<%= domain %>/img/icon.png" />
+
+    <title><%= bot.user.username %></title>
+
+    <link rel="shortcut icon" href="<%= bot.user.displayAvatarURL({ dynamic: true }) %>" type="image/x-icon" />
+  </head>
+  <body>
+    <script>
+      window.location.href = "<%= domain %>/dashboard";
+    </script>
+  </body>
+</html>
