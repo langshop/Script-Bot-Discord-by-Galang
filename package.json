@@ -1,0 +1,17 @@
+{
+  "name": "bot-register-with-replit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "nodemon": "node index.js"
+  },
+  "author": "Syahril Maulana",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
