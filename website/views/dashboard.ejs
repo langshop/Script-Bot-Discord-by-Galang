@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="<%= bot.user.username %>" />
+    <meta name="og:description" content="Website Ini Untuk Join Discord <%= bot.user.username %>" />
+    <meta name="og:image" content="<%= bot.user.displayAvatarURL({ dynamic: true }) %>" />
+    <meta name="og:url" content="<%= domain %>/" />
+
+    <meta name="twitter:title" content="<%= bot.user.username %>" />
+    <meta name="twitter:description" content="Website Ini Untuk Join Discord <%= bot.user.username %>" />
+    <meta name="twitter:image" content="<%= domain %>/img/icon.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="<%= domain %>/css/dashboard.css" />
+
+    <title><%= bot.user.username %></title>
+
+    <link rel="shortcut icon" href="<%= bot.user.displayAvatarURL({ dynamic: true }) %>" type="image/x-icon" />
+  </head>
+  <body id="body">
+    <div class="jumbotron text-center text-white">
+      <img
+        src="<%= bot.user.displayAvatarURL({ dynamic: true }) %>"
+        class="img-thumbnail rounded-circle shadow-sm"
+        alt="<%= bot.user.username %>"
+        width="200"
+      />
+      <h1 class="display-4 fw-bold"><%= bot.user.username %></h1>
+      <p class="fw-bold lead">Members: <%= bot.users.cache.size %></p>
+      <a class="btn btn-primary fw-bold" href="<%= link %>" target="_blank" type="button">Join Discord</a>
+    </div>
+
+    <footer class="fixed-bottom text-center">
+      <p class="text-white">
+        Created with <i class="bi bi-heart-fill text-danger"></i> by
+        <a href="https://www.instagram.com/syahril_m21/" target="_blank">Syahril Official</a>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="<%= domain %>/js/dashboard.js">
+    </script>
+  </body>
+</html>
