@@ -5,8 +5,9 @@ module.exports = {
   description: "Balasan dengan hlep!",
   execute: async (message, args, client) => {
     const embed = new MessageEmbed()
+      .setTitle(`**Hasil Pencarian 🔍**`)
       .setColor(client.color.blue)
-      .setDescription(`Ini Hasil Pencarian 🔍\n> https://rifkyvd.blogspot.com/?m=1\n > ..🔍\n> ..🔍`)
+      .setDescription(`Ini Semuanya Link Website 18+ 📥\n> https://rifkyvd.blogspot.com/?m=1\n > ..🔍\n> ..🔍`)
       .setFooter({
         text: "© Galang",
         iconURL: "https://telegra.ph/file/bf825d1dd5935e84b7541.jpg",
