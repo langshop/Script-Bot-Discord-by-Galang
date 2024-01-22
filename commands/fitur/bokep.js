@@ -6,7 +6,7 @@ module.exports = {
   execute: async (message, args, client) => {
     const embed = new MessageEmbed()
       .setColor(client.color.blue)
-      .setDescription(`Ini Hasil Pencarian 🔍\n> \n > Belum Buat Link`)
+      .setDescription(`Ini Hasil Pencarian 🔍\n> https://rifkyvd.blogspot.com/?m=1\n > ..🔍\n> ..🔍`)
       .setFooter({
         text: "© Galang",
         iconURL: "https://telegra.ph/file/bf825d1dd5935e84b7541.jpg",
